@@ -112,6 +112,11 @@ header a:hover {
   display: none;
 }
 
+.fa-search {
+    font-size: 1.063rem; /*17px height*/
+    color: white;
+}
+
 .filters {
   display: flex;
   flex-direction: row;
