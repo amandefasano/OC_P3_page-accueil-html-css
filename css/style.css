@@ -72,6 +72,21 @@ header a:hover {
   margin: 2.2rem 0;
 }
 
+.find_location label:only-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.13rem; /*50px*/
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 0.9rem; /*15px*/
+    border-bottom-left-radius: 0.9rem; /*15px*/
+}
+
+.fa-location-dot {
+    font-size: 1.125rem; /*18px height*/
+    color: #000;
+}
+
 .find_location input {
   font-weight: 600;
   font-size: 1.13rem;
