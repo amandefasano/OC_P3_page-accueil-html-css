@@ -134,22 +134,7 @@ header a:hover {
   height: 3.13rem;
   font-weight: bold;
   font-size: 1.1rem;
-}
-
-.filters a:nth-child(2) {
-  width: 10.8rem;
-}
-
-.filters a:nth-child(3) {
-  width: 8.4rem;
-}
-
-.filters a:nth-child(4) {
-  width: 10.6rem;
-}
-
-.filters a:nth-child(5) {
-  width: 10.4rem;
+  padding: 0 1.187rem; /* 19px */
 }
 
 .filters a i {
