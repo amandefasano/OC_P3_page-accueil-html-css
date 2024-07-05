@@ -248,7 +248,6 @@ a {
 
 .activites-cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -256,6 +255,7 @@ a {
   flex-direction: column;
   /* width: 33%; */
   width: 18.6rem; /*297.5px*/
+  margin-right: 0.875rem; /*14px*/
 }
 
 .activites-cards img {
