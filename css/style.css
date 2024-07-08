@@ -183,7 +183,6 @@ a {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
-  height: 38.375rem; /*614px*/
 }
 
 .hebergements-and-populaires section {
@@ -357,7 +356,7 @@ footer ul {
 
   .populaires-cards {
     display: flex;
-    flex-direction: column; /*was row before*/
+    flex-direction: row; /*was row before*/
     justify-content: space-between;
   }
 
