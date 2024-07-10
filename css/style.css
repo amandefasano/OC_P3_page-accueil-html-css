@@ -369,6 +369,10 @@ footer li {
     margin-top: 50px;
   }
 
+  .populaires-title {
+    margin: 0;
+  }
+
   .populaires-cards {
     display: grid;
     grid-template-rows: 1fr;
@@ -380,16 +384,12 @@ footer li {
     margin: 1.25rem 0 0 0; /*20px*/
   }
 
-  .populaires-cards .third {
-    margin-right: 1.875rem; /*30px*/
-  }
-
   .populaires-cards .card-title {
-    font-size: 14px;
+    font-size: 0.875rem; /*14px*/
   }
 
   .populaires-cards .card-subtitle {
-    font-size: 13px;
+    font-size: 0.812rem; /*13px*/
   }
 
   .activites-cards .card {
