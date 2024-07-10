@@ -174,6 +174,19 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
+.hebergements, .populaires {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 1.875rem 0 1.875rem 1.875rem; /*30px 0 30px 30px*/
+  box-sizing: border-box;
+}
+
+.hebergements-and-populaires {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.187rem; /*35px*/
+}
+
 .section-title {
   font-size: 1.375rem; /*22px*/
   margin: 0;
@@ -185,19 +198,6 @@ a {
 
 .neutral-star {
   color: var(--main-bg-color);
-}
-
-.hebergements-and-populaires {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2.187rem; /*35px*/
-}
-
-.hebergements-and-populaires section {
-  background-color: var(--main-bg-color);
-  border-radius: 20px;
-  padding: 1.875rem 0 1.875rem 1.875rem; /*30px 0 30px 30px*/
-  box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
@@ -410,12 +410,12 @@ footer li {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /****** Header *****/
+  /****** Header *****/
   body {
     padding: 0;
   }
-  
-    header {
+
+  header {
     flex-direction: column;
     align-items: center;
   }
@@ -451,9 +451,13 @@ footer li {
   .find_location {
     padding: 0 1.25rem; /*20px*/
   }
-  
+
   .find_location h2 {
     margin: 1.875rem 0 0.5rem; /*30px 0 8px*/
+  }
+
+  .find_location form {
+    margin: 0;
   }
 
   .find_location_btn {
@@ -467,42 +471,71 @@ footer li {
   /***** Filters *****/
   .filters {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    grid-gap: 0.625rem; /*10px*/
   }
 
   .filters h3 {
-    margin-bottom: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 0;
+    padding-top: 2.187rem; /*35px*/
   }
 
-  .filters-buttons {
-    flex-wrap: wrap;
-    width: 25em; /*400px*/
+  .economic {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .family {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .romantic {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .sponsor {
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 
   .filters a {
-    margin-top: 1.25rem; /*20px*/
+    margin: 0.625rem 0 0 0; /*10px*/
   }
 
   /***** Hebergements and populaires *****/
   .hebergements-and-populaires {
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
+    margin-bottom: 1.562rem; /*25px*/
+  }
+
+  .hebergements-and-populaires section {
+    border-radius: 0;
+    padding: 1.875rem 1.25rem; /*30px 20px*/
   }
 
   /***** Populaires *****/
   .populaires {
     width: 100%;
-    margin-top: 50px;
+    margin: 0;
+  }
+
+  .populaires-title {
+    margin: 0;
   }
 
   .populaires-cards {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
-  .populaires-cards a {
-    width: 30%;
+  .populaires-cards .card {
+    margin: 0.937rem 0 0 0; /*15px*/
   }
 
   .populaires-cards .card-title {
@@ -515,19 +548,58 @@ footer li {
 
   /***** Hebergements *****/
   .hebergements {
+    background-color: unset;
     width: 100%;
   }
 
+  .hebergements-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hebergements-cards .card {
+    margin: 0.937rem 0 0 0; /*15px*/
+  }
+
+  .hebergements .more {
+    margin-top: 0.937rem; /*15px*/
+  }
+
+  /***** Activites *****/
+  .activites {
+    padding: 1.875rem; /*30px*/
+    margin-bottom: 2.187rem; /*35px*/
+  }
+  
   .activites-cards {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .activites-cards .card {
-    width: 19.687em; /*315px*/
+    width: 100%;
+    height: unset;
+    margin: 0.937rem 0 0 0; /*15px*/
   }
 
   .activites-cards img {
+    width: 19.687rem; /*315px*/
     height: 8.812em; /*141px*/
+  }
+
+  /***** Footer *****/
+  footer {
+    padding: 1.875rem 0 0.937rem 1.875rem; /*30px 0 15px 30px*/
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  footer div {
+    padding: 0;
+  }
+
+  .propos, .footer-hebergements {
+    margin-bottom: 3.125rem; /*50px*/
   }
 }
