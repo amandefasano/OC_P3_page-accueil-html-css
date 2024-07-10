@@ -57,24 +57,24 @@ header a:hover {
 }
 
 /***** Find location *****/
-.find_location h2 {
+.find-location h2 {
   margin: 0;
 }
 
-.find_location .headline {
+.find-location .headline {
   margin-top: 0.5rem; /*8px*/
   margin-bottom: 2.187rem; /*35px*/
 }
 
 /*** Form ***/
-.find_location form {
+.find-location form {
   display: flex;
   flex-direction: row;
   position: relative;
   margin-bottom: 2.187rem; /*35px*/
 }
 
-.find_location label:only-of-type {
+.find-location label:only-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,12 +89,12 @@ header a:hover {
   padding: 0.937rem 1rem 0.937rem 1.125rem; /*15px 16px 15px 18px*/
 }
 
-.find_location input {
+.find-location input {
   font-weight: 600;
   font-size: 1.125rem; /*18px*/
 }
 
-.find_location_btn {
+.find-location-btn {
   background-color: #0065fc;
   color: white;
   border: 0.1rem solid #0065fc;
@@ -450,19 +450,19 @@ footer li {
   }
 
   /***** Find location *****/
-  .find_location {
+  .find-location {
     padding: 0 1.25rem; /*20px*/
   }
 
-  .find_location h2 {
+  .find-location h2 {
     margin: 1.875rem 0 0.5rem; /*30px 0 8px*/
   }
 
-  .find_location form {
+  .find-location form {
     margin: 0;
   }
 
-  .find_location_btn {
+  .find-location-btn {
     display: none;
   }
 
