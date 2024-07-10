@@ -94,6 +94,10 @@ header a:hover {
   font-size: 1.125rem; /*18px*/
 }
 
+#location {
+    text-align: center;
+}
+
 .find-location-btn {
   background-color: #0065fc;
   color: white;
