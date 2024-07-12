@@ -15,11 +15,47 @@
   color: var(--main-color);
 }
 
+/***** General *****/
+.margin-0 {
+    margin: 0;
+}
+
+.margin-bottom-35px {
+margin-bottom: 2.187rem; /*35px*/
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/***** Body *****/
 body {
-  display: flex;
-  justify-content: center;
   padding: 0 3.125rem; /*50px*/
-  margin: 0;
 }
 
 .main-container {
@@ -28,14 +64,9 @@ body {
 }
 
 /***** Header *****/
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 header img {
-  width: 3.82rem;
-  height: 1.19rem;
+  width: 3.818rem; /*61.09px*/
+  height: 1.187rem; /*19px*/
   margin: 1.875rem 0 3.75rem; /*30px 0 60px*/
 }
 
@@ -48,36 +79,25 @@ header a {
 
 header a:hover {
   border-style: solid;
-  border-width: 0.2rem 0 0 0;
-  border-color: #0065fc;
+  border-width: 2px 0 0 0;
+  border-color: var(--main-color);
 }
 
 .active {
-  color: #0065fc;
+  color: var(--main-color);
 }
 
 /***** Find location *****/
-.find-location h2 {
-  margin: 0;
-}
-
-.find-location .headline {
+.headline {
   margin-top: 0.5rem; /*8px*/
-  margin-bottom: 2.187rem; /*35px*/
 }
 
 /*** Form ***/
 .find-location form {
-  display: flex;
-  flex-direction: row;
   position: relative;
-  margin-bottom: 2.187rem; /*35px*/
 }
 
 .find-location label:only-of-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--main-bg-color);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -89,12 +109,8 @@ header a:hover {
   padding: 0.937rem 1rem 0.937rem 1.125rem; /*15px 16px 15px 18px*/
 }
 
-.find-location input {
-  font-weight: bold;
-  font-size: 1.125rem; /*18px*/
-}
-
 #location {
+    font-size: 1.125rem; /*18px*/
     text-align: center;
 }
 
@@ -123,23 +139,9 @@ header a:hover {
 }
 
 /*** Filters ***/
-.filters {
-  display: flex;
-  flex-direction: row;
-}
-
-.filters p {
-  margin: 0;
-}
-
 .filters a {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   border: 0.13rem solid #d9d9d9;
   border-radius: 25px;
-  font-weight: bold;
   font-size: 1.062rem; /*17px*/
   padding: 0.937rem 1.187rem; /*15px 19px*/
   margin-left: 0.937rem; /*15px*/
@@ -154,12 +156,8 @@ header a:hover {
 }
 
 /*** Info ***/
-.info {
-  display: flex;
-  align-items: center;
-}
 
-.info p {
+.info {
   margin: 2.2rem 0.63rem; /*35px 10px*/
 }
 
@@ -173,12 +171,6 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2.187rem; /*35px*/
-}
-
 .hebergements,
 .populaires {
   background-color: var(--main-bg-color);
@@ -188,7 +180,6 @@ a {
 
 .section-title {
   font-size: 1.375rem; /*22px*/
-  margin: 0;
 }
 
 .euro {
@@ -211,10 +202,6 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.hebergements-cards .card {
-  flex-direction: column;
-}
-
 .hebergements-cards .card-title {
   margin: 0 0 0.5rem 0; /*8px*/
 }
@@ -229,7 +216,6 @@ a {
 .hebergements .more {
   display: block;
   font-size: 1.125rem; /*18px*/
-  font-weight: bold;
   margin: 1.9rem 0 0 0; /*30px*/
 }
 
@@ -239,9 +225,6 @@ a {
 }
 
 .populaires-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-right: 1.875rem; /*30px*/
 }
 
@@ -261,19 +244,10 @@ a {
   padding: 1.875rem 0 1.875rem 1.875rem; /*30px 0 30px 30px*/
 }
 
-.activites h2 {
-  margin: 0;
-}
-
 .activites-cards {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-between;
-}
-
-.activites-cards .card {
-  flex-direction: column;
 }
 
 .activites-cards img {
@@ -305,15 +279,8 @@ a {
   font-size: 1rem; /*16px*/
 }
 
-.card-subtitle {
-  margin: 0;
-}
-
 .card-content {
   padding: 0.312rem 0.937rem 0.937rem; /*5px 15px*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /****** Footer ***********/
@@ -436,7 +403,7 @@ footer li {
 
   header a:hover {
     border-style: solid;
-    border-width: 0 0 0.125em 0; /*2px*/
+    border-width: 0 0 2px 0;
     border-color: #0065fc;
   }
 
