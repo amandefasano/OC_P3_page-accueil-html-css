@@ -40,7 +40,7 @@ header img {
 }
 
 header a {
-  font-size: 1rem;
+  font-size: 1rem; /*16px*/
   display: inline-block;
   padding-top: 1rem; /*16px*/
   margin-left: 4.25rem; /*68px*/
@@ -90,7 +90,7 @@ header a:hover {
 }
 
 .find-location input {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 1.125rem; /*18px*/
 }
 
@@ -114,11 +114,6 @@ header a:hover {
   right: 0;
   bottom: 0;
   width: 3.062rem; /*49px*/
-  background-color: #0065fc;
-  color: white;
-  border: 0.1rem solid #0065fc;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   display: none;
 }
 
@@ -189,7 +184,6 @@ a {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 1.875rem; /*30px*/
-  box-sizing: border-box;
 }
 
 .section-title {
@@ -241,8 +235,7 @@ a {
 
 /****** Populaires ***********/
 .populaires {
-  width: 32%;
-  /* width: 26.8rem; */
+  width: 32%; /*26.8rem*/
 }
 
 .populaires-title {
@@ -292,7 +285,6 @@ a {
 
 .activites-cards-title {
   font-size: 1rem; /*16px*/
-  /* margin: 0.625rem 0.25rem; */ /*20px 19px*/
 }
 
 /****** Cards ***********/
@@ -311,7 +303,6 @@ a {
 
 .card-title {
   font-size: 1rem; /*16px*/
-  /* margin: 0.625rem 0 0.312rem 0.937rem;  */ /*10px 0 5px 15px*/
 }
 
 .card-subtitle {
@@ -323,11 +314,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-sizing: border-box;
 }
-
-/* .card-rating {
-} */
 
 /****** Footer ***********/
 footer {
@@ -370,7 +357,7 @@ footer li {
 
   .populaires {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 3.125rem; /*50px*/
   }
 
   .populaires-title {
