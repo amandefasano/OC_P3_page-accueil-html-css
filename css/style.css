@@ -53,14 +53,11 @@
   justify-content: space-between;
 }
 
-/***** Body *****/
-body {
-  padding: 0 3.125rem; /*50px*/
-}
-
+/***** Main container *****/
 .main-container {
   width: 100%;
   max-width: 1440px;
+  padding: 0 3.125rem; /*50px*/
 }
 
 /***** Header *****/
@@ -160,11 +157,12 @@ header a:hover {
 /*** Info ***/
 
 .info {
+  font-size: 1rem;
   margin: 2.2rem 0.63rem; /*35px 10px*/
 }
 
 .fa-info {
-  font-size: 0.625em; /*10px*/
+  font-size: 0.625em; /*10px height*/
   border: solid 1px #d9d9d9;
   border-radius: 50px;
   padding: 0.437rem 0.625rem; /*7px 10px*/
@@ -247,7 +245,7 @@ a {
 
 /****** Activites ***********/
 .activites {
-  padding: 1.875rem 0 1.875rem 1.875rem; /*30px 0 30px 30px*/
+  padding: 1.875rem; /*30px*/
 }
 
 .activites-cards {
@@ -259,9 +257,14 @@ a {
 
 .activites-cards img {
   width: 100%;
-  height: 23.75rem; /*380px*/
+  height: 23.75rem; /*380px*/ /*85%*/
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.activites-cards .card-content {
+  padding: 1.25rem 1.187rem; /*20px 19px*/
+  height: 3.687rem; /*59px*/
 }
 
 .activites-cards-title {
@@ -319,7 +322,7 @@ footer li {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets, less than/equal to 1024px) */
 @media (max-width: 1024px) {
   .hebergements-and-populaires {
     flex-direction: column;
@@ -377,7 +380,7 @@ footer li {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /****** Header *****/
-  body {
+  .main-container {
     padding: 0;
   }
 
