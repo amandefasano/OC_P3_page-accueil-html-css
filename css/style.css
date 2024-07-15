@@ -17,40 +17,40 @@
 
 /***** General *****/
 .margin-0 {
-    margin: 0;
+  margin: 0;
 }
 
 .margin-bottom-35px {
-margin-bottom: 2.187rem; /*35px*/
+  margin-bottom: 2.187rem; /*35px*/
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .align-items-center {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .justify-content-center {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .justify-content-space-between {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /***** Body *****/
@@ -73,14 +73,17 @@ header img {
 header a {
   font-size: 1rem; /*16px*/
   display: inline-block;
-  padding-top: 1rem; /*16px*/
+  padding-top: 0.875rem; /*14px*/
   margin-left: 4.25rem; /*68px*/
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: rgba(255, 255, 255, 0);
 }
 
 header a:hover {
-  border-style: solid;
-  border-width: 2px 0 0 0;
-  border-color: var(--main-color);
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: var(--main-color);
 }
 
 .active {
@@ -110,8 +113,10 @@ header a:hover {
 }
 
 #location {
-    font-size: 1.125rem; /*18px*/
-    text-align: center;
+  font-size: 1.125rem; /*18px*/
+  text-align: center;
+  border-width: 1px 0;
+  border-color: var(--main-bg-color);
 }
 
 .find-location-btn {
@@ -126,7 +131,7 @@ header a:hover {
 .mobile {
   position: absolute;
   top: 0;
-  left: 17.4rem;
+  left: 17.1rem;
   right: 0;
   bottom: 0;
   width: 3.062rem; /*49px*/
@@ -161,8 +166,11 @@ header a:hover {
   margin: 2.2rem 0.63rem; /*35px 10px*/
 }
 
-.fa-circle-info {
-  font-size: 1.5rem; /*24px*/
+.fa-info {
+  font-size: 0.625em; /*10px*/
+  border: solid 1px #d9d9d9;
+  border-radius: 50px;
+  padding: 0.437rem 0.625rem; /*7px 10px*/
 }
 
 a {
@@ -200,6 +208,7 @@ a {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.875rem; /*30px*/
 }
 
 .hebergements-cards .card-title {
@@ -248,6 +257,7 @@ a {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.875rem; /*30px*/
 }
 
 .activites-cards img {
@@ -267,7 +277,7 @@ a {
   background-color: white;
   border-radius: 20px;
   padding: 0.312rem; /*5px*/
-  margin: 1.875rem 1.875rem 0 0; /*30px*/
+  margin-top: 1.875rem; /*30px*/
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -335,7 +345,7 @@ footer li {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1.25rem; /*20px*/
+    gap: 1.25rem; /*20px*/
   }
 
   .populaires-cards .card {
@@ -355,8 +365,7 @@ footer li {
   }
 
   .activites-cards img {
-    height: 65%;
-    /* height: 12.5rem; */ /*200px*/
+    height: 65%; /* 12.5rem = 200px*/
   }
 
   .activites-cards .card-content {
@@ -443,6 +452,10 @@ footer li {
     padding-top: 2.187rem; /*35px*/
   }
 
+  .filters a {
+    font-size: 0.875rem; /*14px*/
+  }
+
   .economic {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -485,7 +498,7 @@ footer li {
   }
 
   .populaires-title {
-    margin: 0;
+    margin-bottom: 0.937rem; /*15px*/
   }
 
   .populaires-cards {
@@ -495,7 +508,7 @@ footer li {
   }
 
   .populaires-cards .card {
-    margin: 0.937rem 0 0 0; /*15px*/
+    margin: 0;
   }
 
   .populaires-cards .card-title {
@@ -550,12 +563,13 @@ footer li {
 
   /***** Footer *****/
   footer {
-    padding: 1.875rem 0 0.937rem 1.875rem; /*30px 0 15px 30px*/
+    padding: 1.875rem 0.125rem 0.937rem 1.875rem; /*30px 2px 15px 30px*/
     flex-direction: column;
     justify-content: space-between;
   }
 
   footer div {
+    width: unset;
     padding: 0;
   }
 
