@@ -75,15 +75,11 @@ header a {
   display: inline-block;
   padding-top: 0.875rem; /*14px*/
   margin-left: 4.25rem; /*68px*/
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: rgba(255, 255, 255, 0);
+  border-top: solid 2px rgba(255, 255, 255, 0);
 }
 
 header a:hover {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: var(--main-color);
+  border-top: solid 2px var(--main-color);
 }
 
 .active {
@@ -122,6 +118,7 @@ header a:hover {
 .find-location-btn {
   background-color: #0065fc;
   color: white;
+  font-size: 1.125rem; /*18px*/
   border: 0.1rem solid #0065fc;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
