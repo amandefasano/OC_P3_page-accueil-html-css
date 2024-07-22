@@ -93,7 +93,7 @@ header a:hover {
   position: relative;
 }
 
-.find-location label:only-of-type {
+.find-location .location-dot {
   background-color: var(--main-bg-color);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
