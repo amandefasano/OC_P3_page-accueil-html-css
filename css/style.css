@@ -75,12 +75,13 @@ header a {
   border-top: solid 2px rgba(255, 255, 255, 0);
 }
 
-header a:hover {
-  border-top: solid 2px var(--main-color);
+.active {
+  /* color: var(--main-color); */
 }
 
-.active {
+header a:hover {
   color: var(--main-color);
+  border-top: solid 2px var(--main-color);
 }
 
 /***** Find location *****/
