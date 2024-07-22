@@ -117,6 +117,7 @@ header a:hover {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 0 1rem; /*16px*/
+  cursor: pointer;
 }
 
 .mobile {
