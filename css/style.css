@@ -75,10 +75,6 @@ header a {
   border-top: solid 2px rgba(255, 255, 255, 0);
 }
 
-.active {
-  /* color: var(--main-color); */
-}
-
 header a:hover {
   color: var(--main-color);
   border-top: solid 2px var(--main-color);
@@ -325,6 +321,15 @@ footer li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less than/equal to 1024px) */
 @media (max-width: 1024px) {
+  header a:hover {
+    border-top: unset;
+  }
+
+  header a:active {
+    color: var(--main-color);
+    border-top: solid 2px var(--main-color);
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
@@ -406,15 +411,16 @@ footer li {
     justify-content: center;
     margin: 0;
     padding: 0 0 1rem 0; /*16px*/
-    border-style: solid;
-    border-width: 0 0 0.125em 0; /*2px*/
-    border-color: #f2f2f2;
+    border-bottom: solid 2px var(--main-bg-color);
   }
 
   header a:hover {
-    border-style: solid;
-    border-width: 0 0 2px 0;
-    border-color: #0065fc;
+    border-top: unset;
+  }
+
+  header a:active {
+    color: var(--main-color);
+    border-bottom: solid 2px var(--main-color);
   }
 
   /***** Find location *****/
