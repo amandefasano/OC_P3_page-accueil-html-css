@@ -322,10 +322,6 @@ footer li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less than/equal to 1024px) */
 @media (max-width: 1024px) {
-  header a:hover {
-    border-top: unset;
-  }
-
   header a:active {
     color: var(--main-color);
     border-top: solid 2px var(--main-color);
@@ -415,12 +411,8 @@ footer li {
     border-bottom: solid 2px var(--main-bg-color);
   }
 
-  header a:hover {
-    border-top: unset;
-    border-bottom: solid 2px var(--main-color);
-  }
-
   header a:active {
+    border-top: unset;
     color: var(--main-color);
     border-bottom: solid 2px var(--main-color);
   }
