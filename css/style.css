@@ -455,6 +455,7 @@ footer li {
 
   .filters a {
     font-size: 0.875rem; /*14px*/
+    margin: 0.625rem 0 0 0; /*10px*/
   }
 
   .economic {
@@ -475,10 +476,6 @@ footer li {
   .sponsor {
     grid-column: 2/3;
     grid-row: 3/4;
-  }
-
-  .filters a {
-    margin: 0.625rem 0 0 0; /*10px*/
   }
 
   /***** Hebergements and populaires *****/
