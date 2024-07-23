@@ -417,6 +417,7 @@ footer li {
 
   header a:hover {
     border-top: unset;
+    border-bottom: solid 2px var(--main-color);
   }
 
   header a:active {
