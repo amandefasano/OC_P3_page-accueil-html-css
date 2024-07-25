@@ -327,6 +327,10 @@ footer li {
     border-top: solid 2px var(--main-color);
   }
 
+  .filters a:active {
+    background-color: #deebff;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
   }
