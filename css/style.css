@@ -123,7 +123,7 @@ header a:hover {
 .mobile {
   position: absolute;
   top: 0;
-  left: 17.1rem;
+  left: 17.1rem; /*273.6px*/
   right: 0;
   bottom: 0;
   width: 3.062rem; /*49px*/
@@ -131,7 +131,7 @@ header a:hover {
 }
 
 .fa-search {
-  font-size: 1.063rem; /*17px height*/
+  font-size: 1.062rem; /*17px height*/
   color: white;
 }
 
