@@ -226,10 +226,6 @@ a {
   width: 32%; /*26.8rem*/
 }
 
-.populaires-title {
-  margin-right: 1.875rem; /*30px*/
-}
-
 .populaires-cards img {
   width: 33%;
   height: 9.125rem; /*146px*/
@@ -342,10 +338,6 @@ footer li {
   .populaires {
     width: 100%;
     margin-top: 3.125rem; /*50px*/
-  }
-
-  .populaires-title {
-    margin: 0;
   }
 
   .populaires-cards {
