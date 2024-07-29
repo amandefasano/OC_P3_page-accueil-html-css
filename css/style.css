@@ -109,8 +109,13 @@ h1 {
 #location {
   font-size: 1.125rem; /*18px*/
   text-align: center;
-  border-width: 1px 0;
-  border-color: var(--main-bg-color);
+  border-style: none;
+  border-top: solid 1px var(--main-bg-color);
+  border-bottom: solid 1px var(--main-bg-color);
+}
+
+::placeholder {
+    color: #000;
 }
 
 .find-location-btn {
@@ -131,6 +136,8 @@ h1 {
   right: 0;
   bottom: 0;
   width: 3.062rem; /*49px*/
+  border-radius: 15px;
+  box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.15);
   display: none;
 }
 
@@ -164,7 +171,7 @@ h1 {
 
 .info {
   font-size: 1rem;
-  margin: 2.2rem 0.63rem; /*35px 10px*/
+  margin: 2.2rem 0 2.2rem 0.63rem; /*35px 0 35px 10px*/
 }
 
 .fa-info {
@@ -411,8 +418,13 @@ footer li {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0 0 1rem 0; /*16px*/
+    padding: 0 0 0.875rem 0; /*14px*/
     border-bottom: solid 2px var(--main-bg-color);
+  }
+
+  header a:hover {
+    border-top: unset;
+    border-bottom: solid 2px var(--main-color);
   }
 
   header a:active {
@@ -450,7 +462,7 @@ footer li {
     grid-gap: 0.625rem; /*10px*/
   }
 
-  .filters h3 {
+  .filters h2 {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 0;
